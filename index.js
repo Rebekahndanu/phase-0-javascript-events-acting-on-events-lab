@@ -1,4 +1,5 @@
 // Your code here
+// Move dodger left
 const dodger = document.getElementById("dodger");
 
 function moveDodgerLeft() {
@@ -15,12 +16,12 @@ document.addEventListener("keydown", function (e) {
     }
   });
 
-
+// Move dodger right
   function moveDodgerRight() {
     const leftNumbers = dodger.style.left.replace("px", "");
     const left = parseInt(leftNumbers, 10);
-    const rightBoundary = 360; // Define the right boundary for the movement
-    
+    const rightBoundary = 400; 
+
     if (left < rightBoundary - 40) {
       dodger.style.left = `${left + 1}px`;
     }
